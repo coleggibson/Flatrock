@@ -4,11 +4,11 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #FFBA19;
-    --primaryShade: #ffd675;
-    --primaryDark: #805d0d;
-    --bodyTextColor: #4E4B66;
-    --bodyTextColorWhite: #FAFBFC;
+    --primary: #6cb5fa;
+    --primaryShade: #6d61d4;
+    --primaryDark: #061463;
+    --bodyTextColor: #000000;
+    --bodyTextColorWhite: #1a1168;
     --headerColor: #1a1a1a;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -266,7 +266,7 @@
     overflow: hidden;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: #fff;
-    top: 3.7rem;
+    top: 3.6875rem;
     padding-top: 0;
     height: 0;
     transition: height 0.3s, padding-top 0.3s, top 0.3s;

@@ -6,7 +6,7 @@
   #hero {
     font-family: 'Roboto', 'Arial', sans-serif;
     /* Centers button */
-    text-align: center;
+    text-align: left;
     /* changes on tablet */
     padding: 0 1rem;
     padding-bottom: 6.25rem;
@@ -14,6 +14,7 @@
     z-index: 1;
     /* prevents overflow from the lines extending past the screen width */
     overflow: hidden;
+    background-image: linear-gradient(to right, #FFF 40%, #3c8de948);
   }
   #hero .cs-picture {
     /* Background Image */
@@ -23,7 +24,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -2;
   }
   #hero .cs-picture:before {
     /* Black Color Overlay */
@@ -36,7 +36,6 @@
     display: block;
     top: 0;
     left: 0;
-    z-index: 1;
     /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
@@ -104,7 +103,6 @@
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
     font-weight: 900;
     line-height: 1.2em;
-    text-align: center;
     width: 100%;
     /* 32px - 40px */
     margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
@@ -115,7 +113,6 @@
     /* 16px - 20px */
     font-size: clamp(1rem, 1.95vw, 1.25rem);
     line-height: 1.5em;
-    text-align: center;
     width: 100%;
     /* 32px - 40px */
     margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
@@ -258,6 +255,7 @@
   .services {
     border-radius: 0.3125em;
     margin: auto;
+    margin-top: -10.4375em;
     position: relative;
     z-index: 100;
     background: #fff;
