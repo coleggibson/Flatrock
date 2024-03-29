@@ -103,6 +103,22 @@
   #sbs .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
+  #sbs .cs-gutter {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  #sbs .cs-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(108, 181, 250, 0.37);
+  }
+  #sbs .cs-card-title {
+    font-weight: bold;
+  }
   #sbs .cs-flex-group {
     /* 16px - 32px */
     padding: clamp(1rem, 3vw, 2rem);

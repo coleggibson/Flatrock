@@ -9,12 +9,11 @@
     text-align: left;
     /* changes on tablet */
     padding: 0 1rem;
-    padding-bottom: 6.25rem;
     position: relative;
     z-index: 1;
     /* prevents overflow from the lines extending past the screen width */
     overflow: hidden;
-    background-image: linear-gradient(to right, #FFF 40%, #3c8de948);
+    background: linear-gradient(to right, #ffffff 50%, #47a4f0);
   }
   #hero .cs-picture {
     /* Background Image */
@@ -48,6 +47,11 @@
     /* Makes image act like a background-image */
     object-fit: cover;
   }
+  #hero .cs-svg {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
   #hero .cs-container {
     width: 100%;
     max-width: 80em;
@@ -55,6 +59,7 @@
     /* 144px - 280px - leaving extra space for the navigation */
     /* changes on tablet */
     padding: clamp(9em, 25.95vw, 17.5em) 0;
+    padding-bottom: 30px;
     margin: auto;
     position: relative;
   }

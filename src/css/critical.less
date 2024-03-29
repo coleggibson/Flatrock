@@ -12,11 +12,12 @@
         text-align: left;
         /* changes on tablet */
         padding: 0 16/16rem;
-        padding-bottom: 100/16rem;
+        // padding-bottom: 100/16rem;
         position: relative;
         z-index: 1;
         /* prevents overflow from the lines extending past the screen width */
         overflow: hidden;
+        background:linear-gradient(to right, #fff 50%, #47a4f0 );
 
         .cs-picture {
             /* Background Image */
@@ -54,7 +55,11 @@
                 object-fit: cover;
             }
         }
-
+        .cs-svg {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
         .cs-container {
             width: 100%;
             max-width: 1280/16em;
@@ -62,6 +67,7 @@
             /* 144px - 280px - leaving extra space for the navigation */
             /* changes on tablet */
             padding: clamp(9em, 25.95vw, 17.5em) 0 ;
+            padding-bottom: 30px;
             margin: auto;
             position: relative;
 
@@ -220,6 +226,8 @@
                 display: block;
                 margin-right: 12/16rem;
             }
+
+            
         }
     }
 }
