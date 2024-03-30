@@ -1,12 +1,12 @@
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---       About Us         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  #sbs {
+  #about-us {
     padding: var(--sectionPadding);
   }
-  #sbs .cs-container {
+  #about-us .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -16,7 +16,7 @@
     flex-direction: column;
     row-gap: 2.5rem;
   }
-  #sbs .cs-left {
+  #about-us .cs-left {
     /* scaling the font size with the view width */
     font-size: min(2.31vw, .7em);
     /* using ems so we can use font size to scale the whole section */
@@ -24,14 +24,14 @@
     height: 39.75em;
     position: relative;
   }
-  #sbs .cs-picture {
+  #about-us .cs-picture {
     border-radius: 1.5em;
     /* clips img tag corners */
     overflow: hidden;
     position: absolute;
     display: block;
   }
-  #sbs .cs-picture img {
+  #about-us .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,13 +40,21 @@
     /* makes image act like a background image */
     object-fit: cover;
   }
-  #sbs .cs-picture1 {
+  #about-us .dev-img {
+    margin: 30px;
+  }
+  #about-us .dev-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  #about-us .cs-picture1 {
     width: 32.625em;
     height: 36.3125em;
     left: 0;
     top: 0;
   }
-  #sbs .cs-picture2 {
+  #about-us .cs-picture2 {
     width: 25.875em;
     height: 25em;
     background-color: #fff;
@@ -56,7 +64,7 @@
     right: 0;
     bottom: 0;
   }
-  #sbs .cs-picture3 {
+  #about-us .cs-picture3 {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,11 +73,11 @@
     /* makes image act like a background image */
     object-fit: cover;
   }
-  #sbs .cs-right {
+  #about-us .cs-right {
     margin: auto;
     max-width: 33.875rem;
   }
-  #sbs .cs-topper {
+  #about-us .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -80,7 +88,7 @@
     margin-bottom: 0.25rem;
     display: block;
   }
-  #sbs .cs-title {
+  #about-us .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -90,7 +98,7 @@
     color: var(--headerColor);
     position: relative;
   }
-  #sbs .cs-text {
+  #about-us .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: left;
@@ -100,40 +108,43 @@
     margin-bottom: 1rem;
     color: var(--bodyTextColor);
   }
-  #sbs .cs-text:last-of-type {
+  #about-us .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs .cs-gutter {
+  #about-us .cs-gutter {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
-  #sbs .cs-card {
+  #about-us .cs-card {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 10px;
     margin-top: 10px;
     background-color: rgba(108, 181, 250, 0.37);
+    border-radius: 5%;
   }
-  #sbs .cs-card-title {
+  #about-us .cs-card-title {
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  #sbs .cs-flex-group {
+  #about-us .cs-flex-group {
     /* 16px - 32px */
     padding: clamp(1rem, 3vw, 2rem);
     background-color: #F7F7F7;
     border-radius: 1rem;
     position: relative;
   }
-  #sbs .cs-flex-p {
+  #about-us .cs-flex-p {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     margin: 0 0 1rem;
     color: #767676;
   }
-  #sbs .cs-name {
+  #about-us .cs-name {
     font-size: 1rem;
     line-height: 1.2em;
     text-transform: uppercase;
@@ -142,13 +153,13 @@
     color: var(--headerColor);
     display: block;
   }
-  #sbs .cs-job {
+  #about-us .cs-job {
     font-size: 0.875rem;
     line-height: 1.5em;
     color: #767676;
     display: block;
   }
-  #sbs .cs-quote-icon {
+  #about-us .cs-quote-icon {
     /* 60px - 136px */
     width: clamp(3.75rem, 10vw, 8.5rem);
     height: auto;
@@ -157,66 +168,66 @@
     /* 16px - 32px */
     right: clamp(1rem, 4vw, 2rem);
   }
-  #sbs .button-solid {
+  #about-us .button-solid {
     margin-top: 2rem;
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
-  #sbs .cs-container {
+  #about-us .cs-container {
     flex-flow: row;
     justify-content: space-between;
     gap: 3.25rem;
   }
-  #sbs .cs-left {
+  #about-us .cs-left {
     font-size: min(1.2vw, 1em);
     flex: none;
   }
-  #sbs .cs-right {
+  #about-us .cs-right {
     margin: 0;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
-  body.dark-mode #sbs .cs-left:before,
-  body.dark-mode #sbs .cs-left:after {
+  body.dark-mode #about-us .cs-left:before,
+  body.dark-mode #about-us .cs-left:after {
     background: var(--accent);
   }
-  body.dark-mode #sbs .cs-picture2 {
+  body.dark-mode #about-us .cs-picture2 {
     background-color: var(--dark);
     /* 6px - 12px */
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
   }
-  body.dark-mode #sbs .cs-topper {
+  body.dark-mode #about-us .cs-topper {
     color: var(--primaryLight);
   }
-  body.dark-mode #sbs .cs-title,
-  body.dark-mode #sbs .cs-text,
-  body.dark-mode #sbs .cs-h3,
-  body.dark-mode #sbs .cs-flex-p,
-  body.dark-mode #sbs .cs-name {
+  body.dark-mode #about-us .cs-title,
+  body.dark-mode #about-us .cs-text,
+  body.dark-mode #about-us .cs-h3,
+  body.dark-mode #about-us .cs-flex-p,
+  body.dark-mode #about-us .cs-name {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs .cs-flex-group {
+  body.dark-mode #about-us .cs-flex-group {
     background-color: var(--accent);
   }
-  body.dark-mode #sbs .cs-job {
+  body.dark-mode #about-us .cs-job {
     color: var(--bodyTextColorWhite);
     opacity: .8;
   }
-  body.dark-mode #sbs .cs-quote-icon {
+  body.dark-mode #about-us .cs-quote-icon {
     opacity: .2;
   }
 }
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---       What We Do           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  #sbs-r {
+  #wwd {
     padding: var(--sectionPadding);
   }
-  #sbs-r .cs-container {
+  #wwd .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -226,7 +237,7 @@
     flex-direction: column;
     row-gap: 2.5rem;
   }
-  #sbs-r .cs-left {
+  #wwd .cs-left {
     /* scaling the font size with the view width */
     font-size: min(2.31vw, .7em);
     /* using ems so we can use font size to scale the whole section */
@@ -234,14 +245,14 @@
     height: 39.75em;
     position: relative;
   }
-  #sbs-r .cs-picture {
+  #wwd .cs-picture {
     border-radius: 1.5em;
     /* clips img tag corners */
     overflow: hidden;
     position: absolute;
     display: block;
   }
-  #sbs-r .cs-picture img {
+  #wwd .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -250,13 +261,13 @@
     /* makes image act like a background image */
     object-fit: cover;
   }
-  #sbs-r .cs-picture1 {
+  #wwd .cs-picture1 {
     width: 32.625em;
     height: 36.3125em;
     right: 0;
     top: 0;
   }
-  #sbs-r .cs-picture2 {
+  #wwd .cs-picture2 {
     width: 25.875em;
     height: 25em;
     background-color: #fff;
@@ -266,11 +277,11 @@
     left: 0;
     bottom: 0;
   }
-  #sbs-r .cs-right {
+  #wwd .cs-right {
     margin: auto;
     max-width: 33.875rem;
   }
-  #sbs-r .cs-topper {
+  #wwd .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -281,7 +292,7 @@
     margin-bottom: 0.25rem;
     display: block;
   }
-  #sbs-r .cs-title {
+  #wwd .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -291,7 +302,7 @@
     color: var(--headerColor);
     position: relative;
   }
-  #sbs-r .cs-text {
+  #wwd .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: left;
@@ -301,24 +312,24 @@
     margin-bottom: 1rem;
     color: var(--bodyTextColor);
   }
-  #sbs-r .cs-text:last-of-type {
+  #wwd .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-r .cs-flex-group {
+  #wwd .cs-flex-group {
     /* 16px - 32px */
     padding: clamp(1rem, 3vw, 2rem);
     background-color: #F7F7F7;
     border-radius: 1rem;
     position: relative;
   }
-  #sbs-r .cs-flex-p {
+  #wwd .cs-flex-p {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     margin: 0 0 1rem;
     color: #767676;
   }
-  #sbs-r .cs-name {
+  #wwd .cs-name {
     font-size: 1rem;
     line-height: 1.2em;
     text-transform: uppercase;
@@ -327,13 +338,13 @@
     color: var(--headerColor);
     display: block;
   }
-  #sbs-r .cs-job {
+  #wwd .cs-job {
     font-size: 0.875rem;
     line-height: 1.5em;
     color: #767676;
     display: block;
   }
-  #sbs-r .cs-quote-icon {
+  #wwd .cs-quote-icon {
     /* 60px - 136px */
     width: clamp(3.75rem, 10vw, 8.5rem);
     height: auto;
@@ -345,303 +356,51 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
-  #sbs-r .cs-container {
+  #wwd .cs-container {
     flex-flow: row;
     justify-content: space-between;
     gap: 3.25rem;
   }
-  #sbs-r .cs-left {
+  #wwd .cs-left {
     font-size: min(1.2vw, 1em);
     flex: none;
     /* sends it to the right */
     order: 2;
   }
-  #sbs-r .cs-right {
+  #wwd .cs-right {
     margin: 0;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
-  body.dark-mode #sbs-r .cs-left:before,
-  body.dark-mode #sbs-r .cs-left:after {
+  body.dark-mode #wwd .cs-left:before,
+  body.dark-mode #wwd .cs-left:after {
     background: var(--accent);
   }
-  body.dark-mode #sbs-r .cs-picture2 {
+  body.dark-mode #wwd .cs-picture2 {
     background-color: var(--dark);
     /* 6px - 12px */
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
   }
-  body.dark-mode #sbs-r .cs-topper {
+  body.dark-mode #wwd .cs-topper {
     color: var(--primaryLight);
   }
-  body.dark-mode #sbs-r .cs-title,
-  body.dark-mode #sbs-r .cs-text,
-  body.dark-mode #sbs-r .cs-h3,
-  body.dark-mode #sbs-r .cs-flex-p,
-  body.dark-mode #sbs-r .cs-name {
+  body.dark-mode #wwd .cs-title,
+  body.dark-mode #wwd .cs-text,
+  body.dark-mode #wwd .cs-h3,
+  body.dark-mode #wwd .cs-flex-p,
+  body.dark-mode #wwd .cs-name {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs-r .cs-flex-group {
+  body.dark-mode #wwd .cs-flex-group {
     background-color: var(--accent);
   }
-  body.dark-mode #sbs-r .cs-job {
+  body.dark-mode #wwd .cs-job {
     color: var(--bodyTextColorWhite);
     opacity: .8;
   }
-  body.dark-mode #sbs-r .cs-quote-icon {
+  body.dark-mode #wwd .cs-quote-icon {
     opacity: .2;
-  }
-}
-/*-- -------------------------- -->
-<---          Gallery           -->
-<--- -------------------------- -*/
-/* Mobile - 360px - Contains hover animation */
-@media only screen and (min-width: 0em) {
-  #gallery {
-    /* Centers button */
-    text-align: center;
-    padding: var(--sectionPadding);
-    position: relative;
-    /* Prevents overflow from the image going off screen */
-    overflow: hidden;
-  }
-  #gallery .cs-container {
-    width: 100%;
-    max-width: 82.625em;
-    margin: auto;
-  }
-  #gallery .cs-topper {
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: .1em;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 1rem;
-    display: block;
-  }
-  #gallery .cs-title {
-    font-size: var(--headerFontSize);
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: center;
-    max-width: 38.8125rem;
-    margin: 0 auto;
-    margin-bottom: 2.5rem;
-    color: var(--headerColor);
-    position: relative;
-  }
-  #gallery .cs-image-group {
-    /* used rem so it doesn't scale with the font size of on parent */
-    font-size: min(1.1vw, 1em);
-    width: 100%;
-    max-width: 82.625em;
-    padding: 0;
-    margin: 0 auto 3.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.875em;
-  }
-  #gallery .cs-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.875em;
-  }
-  #gallery .cs-picture {
-    position: relative;
-    display: block;
-  }
-  #gallery .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  #gallery .cs-row-1 .cs-picture-1 {
-    width: 26.25em;
-    height: 35.4375em;
-  }
-  #gallery .cs-row-1 .cs-picture-2 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #gallery .cs-row-1 .cs-picture-3 {
-    width: 26.25em;
-    height: 32em;
-  }
-  #gallery .cs-row-2 .cs-picture-1 {
-    width: 26.25em;
-    height: 30.75em;
-  }
-  #gallery .cs-row-2 .cs-picture-2 {
-    width: 26.25em;
-    height: 32.3125em;
-  }
-  #gallery .cs-row-2 .cs-picture-3 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #gallery .cs-row-3 .cs-picture-1 {
-    width: 26.25em;
-    height: 39.0625em;
-  }
-  #gallery .cs-row-3 .cs-picture-2 {
-    width: 26.25em;
-    height: 28.25em;
-  }
-  #gallery .cs-row-3 .cs-picture-3 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-}
-/* Dark mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #gallery .cs-title {
-    color: var(--bodyTextColorWhite);
-  }
-}
-/*-- -------------------------- -->
-<---          Reviews           -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0em) {
-  #reviews {
-    /* Centers the button */
-    text-align: center;
-    padding: var(--sectionPadding);
-  }
-  #reviews .cs-container {
-    width: 100%;
-    max-width: 69rem;
-    margin: auto;
-  }
-  #reviews .cs-topper {
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: .1em;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 1rem;
-    display: block;
-  }
-  #reviews .cs-title {
-    font-size: var(--headerFontSize);
-    font-weight: 900;
-    line-height: 1.2em;
-    text-align: center;
-    max-width: 43.75rem;
-    margin: 0 auto 1rem;
-    color: var(--headerColor);
-    position: relative;
-  }
-  #reviews .cs-text {
-    font-size: var(--bodyFontSize);
-    line-height: 1.5rem;
-    text-align: center;
-    width: 100%;
-    max-width: 40.625rem;
-    margin: 0 auto;
-    /* 88px - 104px */
-    margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
-    color: var(--bodyTextColor);
-  }
-  #reviews .cs-card-group {
-    padding: 0;
-    /* 48px - 64px */
-    margin: 0 auto clamp(3rem, 5vw, 4rem);
-  }
-  #reviews .cs-item {
-    text-align: left;
-    list-style: none;
-    width: 100%;
-    max-width: 33.875rem;
-    margin: 0 auto 4rem;
-    /* Padding L & R - 16px - 32px */
-    padding: 3.75rem clamp(1rem, 3.2vw, 2rem) 0;
-    /* 32px - 40px */
-    padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
-    box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
-    border-radius: 0.25rem;
-    background: #fff;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    /* Prevents padding from affecting height & width */
-    box-sizing: border-box;
-  }
-  #reviews .cs-item:last-of-type {
-    margin-bottom: 0;
-  }
-  #reviews .cs-item-img {
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    top: -2.5rem;
-  }
-  #reviews .cs-item-p {
-    font-size: 1rem;
-    line-height: 1.5em;
-    margin: 0 0 1.25rem;
-    padding-bottom: 1.25rem;
-    color: var(--bodyTextColor);
-    border-bottom: 1px solid #E8E9EC;
-  }
-  #reviews .cs-reviewer {
-    font-size: 1rem;
-    line-height: 1.5em;
-    font-weight: 700;
-    width: 40%;
-    margin: 0 auto 0 0;
-    display: block;
-    color: var(--headerColor);
-  }
-  #reviews .cs-desc {
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: var(--label);
-    display: block;
-  }
-  #reviews .cs-item-stars {
-    width: 6rem;
-    height: 1rem;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48em) {
-  #reviews .cs-card-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-  #reviews .cs-item {
-    /* reset margin so it won't interfere with flexbox */
-    margin: 0;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #reviews .cs-title,
-  body.dark-mode #reviews .cs-text,
-  body.dark-mode #reviews .cs-item-p,
-  body.dark-mode #reviews .cs-reviewer {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #reviews .cs-item {
-    background: var(--medium);
-  }
-  body.dark-mode #reviews .cs-desc {
-    color: var(--primaryLight);
   }
 }
 /*-- -------------------------- -->
@@ -756,6 +515,46 @@
     z-index: 1;
   }
 }
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #pricing .pricing-card {
+    display: flex;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+  }
+  #pricing .pricing-card .pricing-name {
+    font-weight: 700;
+    padding: 20px;
+  }
+  #pricing .pricing-card .pricing-card-title {
+    font-size: var(--headerFontSize);
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #pricing .pricing-card .pricing-text {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  #pricing .pricing-card .button-solid {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+/* Small Desktop */
+/* Large Desktop */
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #cta:after {

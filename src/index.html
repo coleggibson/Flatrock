@@ -38,7 +38,7 @@ eleventyNavigation:
 <!--                What We Do                    -->
 <!-- ============================================ -->
 
-<section id="sbs-r">
+<section id="wwd">
   <div class="cs-container">
     <!-- Left Image Section -->
     <!-- <div class="cs-left">
@@ -62,9 +62,16 @@ eleventyNavigation:
 <!--                 About Us                   -->
 <!-- ============================================ -->
 
-<section id="sbs">
+<section id="about-us">
   <div class="cs-container">
-      <h2 class="cs-title">About Company Title</h2>
+    <div class="cs-title">Meet Your Developer</div>
+    {% image './src/images/me.jpg', 'dev', 'dev-img', 'lazy'%}
+  </div>
+  <div class="text">My name is Cole, I am a web developer based out of Nashville, Tennessee. 
+    I have a background in digital marketing and have worked with hundreds of small business owners to improve their online presence. 
+   
+  </div>
+  <div class="cs-container">
       <div class="cs-gutter">
         <div class="cs-card">
           <img src="/assets/svgs/responsive.svg" alt="dev" width="20%" height="20%">
@@ -74,8 +81,7 @@ eleventyNavigation:
           <p class="cs-card-text">
             We don't believe in one-size-fits-all solutions.  Our responsive pages will work on any desktop, tablets, and mobile device.
           </p>
-          </div>
-        
+        </div>
       <div class="cs-card">
         <img src="/assets/svgs/mobile-first.svg" alt="dev" width="20%" height="20%">
         <div class="cs-card-title">
@@ -108,24 +114,26 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="pricing">
-  <div class="cs-container">
-    <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-   <div class="cs-card">
-    <div class="cs-card-title"> $0 Down, $150/mo</div>
-    <div class="cs-text">
-      Hosting Fees Included
+    <div class="pricing-card">
+      <div class="pricing-name">GET STARTED</div>
+      <div class="pricing-card-title">$0 Down, $150/mo</div>
+        <div class="pricing-text">
+          5-Page Static Website
+        </div>
+        <div class="pricing-text">
+          Hosting Fees Included
+        </div>
+        <div class="pricing-text">
+          Unlimited Edits
+        </div>
+        <div class="pricing-text">
+          Google Analytics Setup
+        </div>
+        <div class="pricing-text">
+          40 Hours Of Web Design & Development
+        </div>
+        <button class="button-solid">Contact Us</button>
     </div>
-    <div class="cs-text">
-      Unlimited Edits
-    </div>
-    <div class="cs-text">
-      Google Analytics
-    </div>
-    <div class="cs-text">
-      Web Design & Development
-    </div>
-   </div>
-  </div>
 </section>
 
 
