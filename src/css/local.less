@@ -105,7 +105,7 @@
             font-weight: 900;
             line-height: 1.2em;
             text-align: left;
-            max-width: 800/16rem;
+            width: 100%;
             margin: 0 auto 16/16rem;
             color: var(--headerColor);
             position: relative;
@@ -120,6 +120,8 @@
             margin: 0 auto;
             margin-bottom: 16/16rem;
             color: var(--bodyTextColor);
+            padding-top:25px;
+            padding-bottom:25px;
 
             &:last-of-type {
                 margin-bottom: 32/16rem;
@@ -197,8 +199,14 @@
         .button-solid {
             margin-top: 32/16rem;
         }
+
+        .cs-title-main {
+            margin: 0 auto 16/16rem;
+            max-width: 800/16rem;
+        }
     }
 }
+
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
@@ -410,6 +418,19 @@
             /* 16px - 32px */
             right: clamp(1rem, 4vw, 2rem);
         }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+    #wwd {
+        .cs-container {
+            .cs-right {
+                width: 100%;
+                max-width:100%
+            }
+        }
+        
     }
 }
 

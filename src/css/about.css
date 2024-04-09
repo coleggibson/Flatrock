@@ -3,10 +3,11 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  #sbs {
+  #landing {
     padding: var(--sectionPadding);
   }
-  #sbs .cs-container {
+  #landing .cs-container {
+    padding-top: 50px;
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -16,7 +17,7 @@
     flex-direction: column;
     row-gap: 2.5rem;
   }
-  #sbs .cs-left {
+  #landing .cs-left {
     /* scaling the font size with the view width */
     font-size: min(2.31vw, .7em);
     /* using ems so we can use font size to scale the whole section */
@@ -24,14 +25,14 @@
     height: 39.75em;
     position: relative;
   }
-  #sbs .cs-picture {
+  #landing .cs-picture {
     border-radius: 1.5em;
     /* clips img tag corners */
     overflow: hidden;
     position: absolute;
     display: block;
   }
-  #sbs .cs-picture img {
+  #landing .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,13 +41,13 @@
     /* makes image act like a background image */
     object-fit: cover;
   }
-  #sbs .cs-picture1 {
+  #landing .cs-picture1 {
     width: 32.625em;
     height: 36.3125em;
     left: 0;
     top: 0;
   }
-  #sbs .cs-picture2 {
+  #landing .cs-picture2 {
     width: 25.875em;
     height: 25em;
     background-color: #fff;
@@ -56,11 +57,11 @@
     right: 0;
     bottom: 0;
   }
-  #sbs .cs-right {
+  #landing .cs-right {
     margin: auto;
     max-width: 33.875rem;
   }
-  #sbs .cs-topper {
+  #landing .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -70,8 +71,9 @@
     color: var(--primary);
     margin-bottom: 0.25rem;
     display: block;
+    padding-top: 10px;
   }
-  #sbs .cs-title {
+  #landing .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -81,7 +83,7 @@
     color: var(--headerColor);
     position: relative;
   }
-  #sbs .cs-text {
+  #landing .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: left;
@@ -91,24 +93,24 @@
     margin-bottom: 1rem;
     color: var(--bodyTextColor);
   }
-  #sbs .cs-text:last-of-type {
+  #landing .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs .cs-flex-group {
+  #landing .cs-flex-group {
     /* 16px - 32px */
     padding: clamp(1rem, 3vw, 2rem);
     background-color: #F7F7F7;
     border-radius: 1rem;
     position: relative;
   }
-  #sbs .cs-flex-p {
+  #landing .cs-flex-p {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     margin: 0 0 1rem;
     color: #767676;
   }
-  #sbs .cs-name {
+  #landing .cs-name {
     font-size: 1rem;
     line-height: 1.2em;
     text-transform: uppercase;
@@ -117,13 +119,13 @@
     color: var(--headerColor);
     display: block;
   }
-  #sbs .cs-job {
+  #landing .cs-job {
     font-size: 0.875rem;
     line-height: 1.5em;
     color: #767676;
     display: block;
   }
-  #sbs .cs-quote-icon {
+  #landing .cs-quote-icon {
     /* 60px - 136px */
     width: clamp(3.75rem, 10vw, 8.5rem);
     height: auto;
@@ -132,7 +134,7 @@
     /* 16px - 32px */
     right: clamp(1rem, 4vw, 2rem);
   }
-  #sbs .button-solid {
+  #landing .button-solid {
     margin-top: 2rem;
   }
 }

@@ -93,7 +93,7 @@
     font-weight: 900;
     line-height: 1.2em;
     text-align: left;
-    max-width: 50rem;
+    width: 100%;
     margin: 0 auto 1rem;
     color: var(--headerColor);
     position: relative;
@@ -107,6 +107,8 @@
     margin: 0 auto;
     margin-bottom: 1rem;
     color: var(--bodyTextColor);
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   #about-us .cs-text:last-of-type {
     margin-bottom: 2rem;
@@ -170,6 +172,10 @@
   }
   #about-us .button-solid {
     margin-top: 2rem;
+  }
+  #about-us .cs-title-main {
+    margin: 0 auto 1rem;
+    max-width: 50rem;
   }
 }
 /* Desktop - 1024px */
@@ -352,6 +358,13 @@
     bottom: 0rem;
     /* 16px - 32px */
     right: clamp(1rem, 4vw, 2rem);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #wwd .cs-container .cs-right {
+    width: 100%;
+    max-width: 100%;
   }
 }
 /* Desktop - 1024px */
