@@ -207,6 +207,15 @@
     }
 }
 
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+    #about-us{
+        .cs-text{
+            font-size: clamp(1rem, 3vw, 10rem);
+        }
+    }
+
+}
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
@@ -426,8 +435,16 @@
     #wwd {
         .cs-container {
             .cs-right {
+                .cs-text {
+                    font-size: clamp(1rem, 3vw, 10rem);
+                    margin-left: 0em;
+                }
+                .cs-title {
+                    margin-left: 0em;
+                }
                 width: 100%;
-                max-width:100%
+                max-width:100%;
+                padding: 3rem;
             }
         }
         
