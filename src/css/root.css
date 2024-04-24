@@ -743,6 +743,12 @@
     font-size: 1rem;
   }
 }
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #footer {
+    font-size: clamp(1rem, 3vw, 10rem);
+  }
+}
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #footer {
