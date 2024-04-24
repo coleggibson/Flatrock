@@ -17,6 +17,7 @@
             align-items: center;
             flex-direction: column;
             row-gap: 40/16rem;
+            
         }
 
         .cs-left {
@@ -85,7 +86,6 @@
             font-weight: 900;
             line-height: 1.2em;
             text-align: left;
-            max-width: 800/16rem;
             margin: 0 auto 16/16rem;
             color: var(--headerColor);
             position: relative;
@@ -154,12 +154,14 @@
 @media only screen and (min-width: 48em) {
     #wwd {
         .cs-container {
-            
+                .cs-title{
+                    padding: clamp(1rem, 3vw, 2rem);
+                }
                 .cs-text {
                     font-size: clamp(1rem, 3vw, 10rem);
                 }
                 .cs-title {
-                    margin-left: 0em;
+                    // margin-left: 0em;
                     width:100%;
                 }
                
@@ -260,6 +262,12 @@
             align-items: center;
             flex-direction: column;
             row-gap: 40/16rem;
+
+            .dev-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         
@@ -444,6 +452,12 @@
             margin-top: 32/16rem;
         }
 
+        .cs-container-g   {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
        
     }
 }
@@ -451,7 +465,9 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
     #about-us{
-       
+       .cs-title{
+        padding: clamp(1rem, 3vw, 2rem);
+       }
         .cs-text{
             font-size: clamp(1rem, 3vw, 10rem);
         }
@@ -720,6 +736,7 @@
                 font-weight: 700;
                 padding-top: 40px;
                 padding-bottom: 40px;
+                text-align: center;
             }
 
             .pricing-text {

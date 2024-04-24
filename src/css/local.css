@@ -76,7 +76,6 @@
     font-weight: 900;
     line-height: 1.2em;
     text-align: left;
-    max-width: 50rem;
     margin: 0 auto 1rem;
     color: var(--headerColor);
     position: relative;
@@ -135,11 +134,13 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
+  #wwd .cs-container .cs-title {
+    padding: clamp(1rem, 3vw, 2rem);
+  }
   #wwd .cs-container .cs-text {
     font-size: clamp(1rem, 3vw, 10rem);
   }
   #wwd .cs-container .cs-title {
-    margin-left: 0em;
     width: 100%;
   }
   #wwd .cs-container .cs-container {
@@ -219,6 +220,11 @@
     align-items: center;
     flex-direction: column;
     row-gap: 2.5rem;
+  }
+  #about-us .cs-container .dev-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #about-us .cs-left {
     /* scaling the font size with the view width */
@@ -377,9 +383,17 @@
   #about-us .button-solid {
     margin-top: 2rem;
   }
+  #about-us .cs-container-g {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
+  #about-us .cs-title {
+    padding: clamp(1rem, 3vw, 2rem);
+  }
   #about-us .cs-text {
     font-size: clamp(1rem, 3vw, 10rem);
   }
@@ -601,6 +615,7 @@
     font-weight: 700;
     padding-top: 40px;
     padding-bottom: 40px;
+    text-align: center;
   }
   #pricing .pricing-card .pricing-text {
     margin-top: 15px;
