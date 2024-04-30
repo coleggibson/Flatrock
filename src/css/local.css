@@ -81,17 +81,15 @@
     position: relative;
   }
   #wwd .cs-text {
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
-    text-align: left;
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.95vw, 1.25rem);
     width: 100%;
-    max-width: 46.875rem;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+    max-width: 27.625rem;
+    /* 32px - 40px */
+    margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
+    /* 24px - 40px */
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
     color: var(--bodyTextColor);
-  }
-  #wwd .cs-text:last-of-type {
-    margin-bottom: 2rem;
   }
   #wwd .cs-flex-group {
     /* 16px - 32px */
@@ -135,12 +133,6 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
   #wwd .cs-container .cs-title {
-    padding: clamp(1rem, 3vw, 2rem);
-  }
-  #wwd .cs-container .cs-text {
-    font-size: clamp(1rem, 3vw, 10rem);
-  }
-  #wwd .cs-container .cs-title {
     width: 100%;
   }
   #wwd .cs-container .cs-container {
@@ -156,11 +148,6 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
-  #wwd .cs-container {
-    flex-flow: row;
-    justify-content: space-between;
-    gap: 3.25rem;
-  }
   #wwd .cs-left {
     font-size: min(1.2vw, 1em);
     flex: none;
@@ -394,15 +381,11 @@
   #about-us .cs-title {
     padding: clamp(1rem, 3vw, 2rem);
   }
-  #about-us .cs-text {
-    font-size: clamp(1rem, 3vw, 10rem);
-  }
   #about-us .dev-container {
     display: flex;
     max-width: 28.57142857rem;
   }
   #about-us .cs-container-g {
-    font-size: clamp(1rem, 3vw, 10rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,9 +398,6 @@
   #about-us .cs-container-g .cs-gutter .cs-card {
     max-width: 40rem;
     padding: clamp(2rem, 4vw, 10rem);
-  }
-  #about-us .cs-container-g .cs-gutter .cs-card .cs-card-text {
-    font-size: clamp(1rem, 3vw, 10rem);
   }
   .dev-img {
     margin: 30px;
@@ -629,11 +609,6 @@
   }
 }
 /* Tablet - 768px */
-@media only screen and (min-width: 48em) {
-  #pricing {
-    font-size: clamp(1rem, 3vw, 10rem);
-  }
-}
 /* Small Desktop */
 /* Large Desktop */
 /* Dark Mode */

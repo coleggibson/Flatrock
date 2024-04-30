@@ -21,19 +21,30 @@ eleventyNavigation:
 
  
 <section id="hero">
-    <div class="cs-container">
-      <h1 class="cs-title">Small Business Web Design & Development</h1>
-      <p class="cs-text">
-        Quality crafted websites built for you - no page builders required.  
-        Designs built to highlight your brand and boost your online presence. Starting at $150/mo.
-      </p>
-      <a href="/about" class="button-solid">More About Us</a>
-      <div class="cs-svg">
-      
-        <img src="/assets/svgs/developer.svg" alt="dev" width="100%" height="100%">
-    
-  </div>  
-  </div>
+       <div class="cs-container">
+        <div class="cs-flex-group">
+            <h1 class="cs-title">Small Business Web Design & Development</h1>
+            <p class="cs-text">
+              Quality crafted websites built for you - no page builders required.  
+              Designs built to highlight your brand and boost your online presence. Starting at $150/mo.
+            <div class="cs-button-group">
+                <a href="" class="button-solid">Get Started</a>
+                <a href="" class="cs-button-transparent">
+                    <picture class="cs-picture">
+                        <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/chevron-right.svg" alt="icon" width="12" height="12" aria-hidden="true">
+                    </picture>
+                    See Prices
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+
+      {% image './src/images/computer.jpg', 'dev', 'lazy'%}
+  
+    </picture>
 </section>
 
 <!-- ============================================ -->

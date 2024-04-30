@@ -92,17 +92,17 @@
         }
 
         .cs-text {
-            font-size: var(--bodyFontSize);
-            line-height: 1.5em;
-            text-align: left;
+            /* 16px - 20px */
+            font-size: clamp(1rem, 1.95vw, 1.25rem);
+            // line-height: 1.5em;
+            // text-align: left;
             width: 100%;
-            max-width: 750/16rem;
-            margin: 0 auto;
-            margin-bottom: 16/16rem;
+            max-width: (442/16rem);
+            /* 32px - 40px */
+            margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
+            /* 24px - 40px */
+            margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
             color: var(--bodyTextColor);
-            &:last-of-type {
-                margin-bottom: 32/16rem;
-            }
         }
 
         .cs-flex-group {
@@ -154,12 +154,8 @@
 @media only screen and (min-width: 48em) {
     #wwd {
         .cs-container {
-                .cs-title{
-                    padding: clamp(1rem, 3vw, 2rem);
-                }
-                .cs-text {
-                    font-size: clamp(1rem, 3vw, 10rem);
-                }
+              
+                
                 .cs-title {
                     // margin-left: 0em;
                     width:100%;
@@ -184,12 +180,7 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
     #wwd {
-        .cs-container {
-            flex-flow: row;
-            justify-content: space-between;
-            gap: 52/16rem;
-        }
-
+        
         .cs-left {
             font-size:~"min(1.2vw, 1em)";
             flex: none;
@@ -468,15 +459,14 @@
        .cs-title{
         padding: clamp(1rem, 3vw, 2rem);
        }
-        .cs-text{
-            font-size: clamp(1rem, 3vw, 10rem);
-        }
+       
+      
         .dev-container {
             display:flex;
             max-width: 200/7rem;
         }
         .cs-container-g{
-            font-size: clamp(1rem, 3vw, 10rem);
+            
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -487,10 +477,7 @@
                 .cs-card{
                     max-width: 200/5rem;
                     padding: clamp(2rem, 4vw, 10rem);
-                    .cs-card-text{
-                        font-size: clamp(1rem, 3vw, 10rem);
-                        
-                    }
+                    
                 }
             }
             
@@ -756,9 +743,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
-#pricing {
-    font-size: clamp(1rem, 3vw, 10rem);
-}
+
 }
 
 /* Small Desktop */
