@@ -6,6 +6,26 @@
   #wwd {
     padding: var(--sectionPadding);
   }
+  #wwd .cs-gutter {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 21.4375rem;
+  }
+  #wwd .cs-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(108, 181, 250, 0.37);
+    border-radius: 5%;
+  }
+  #wwd .cs-card-title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   #wwd .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -85,8 +105,6 @@
     font-size: clamp(1rem, 1.95vw, 1.25rem);
     width: 100%;
     max-width: 27.625rem;
-    /* 32px - 40px */
-    margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
     /* 24px - 40px */
     margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
     color: var(--bodyTextColor);
@@ -132,9 +150,6 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
-  #wwd .cs-container .cs-title {
-    width: 100%;
-  }
   #wwd .cs-container .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -148,6 +163,16 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
+  #wwd .cs-container .cs-gutter {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    max-width: 75rem;
+    padding: clamp(2rem, 1vw, 4rem);
+  }
+  #wwd .cs-container .cs-gutter .cs-card {
+    margin: 10px;
+  }
   #wwd .cs-left {
     font-size: min(1.2vw, 1em);
     flex: none;
@@ -188,6 +213,196 @@
   }
   body.dark-mode #wwd .cs-quote-icon {
     opacity: .2;
+  }
+}
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1629 {
+    padding: var(--sectionPadding);
+  }
+  #services-1629 .cs-container {
+    /* changes to 1280px at desktop */
+    max-width: 50rem;
+    max-width: 80rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1629 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #services-1629 .cs-title {
+    max-width: 20ch;
+  }
+  #services-1629 .cs-text {
+    max-width: 40rem;
+    position: relative;
+    z-index: 1;
+  }
+  #services-1629 .cs-text:after {
+    /* divider line */
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin-top: 1.5rem;
+    background: var(--primary);
+    opacity: 1;
+    display: block;
+    position: relative;
+  }
+  #services-1629 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: 2.5rem;
+    /* 16px - 40px */
+    column-gap: clamp(1rem, 5vw, 2.5rem);
+  }
+  #services-1629 .cs-item {
+    list-style: none;
+    max-width: 25rem;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 3vw, 1.5rem);
+    text-align: left;
+  }
+  #services-1629 .cs-picture {
+    /* 60px - 80px */
+    width: clamp(3.75rem, 6vw, 5rem);
+    height: clamp(3.75rem, 6vw, 5rem);
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #services-1629 .cs-icon {
+    width: 2rem;
+    height: auto;
+    display: block;
+  }
+  #services-1629 .cs-h3 {
+    font-size: 1.25rem;
+    text-align: inherit;
+    line-height: 1.5em;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--headerColor);
+  }
+  #services-1629 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    text-align: inherit;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #services-1629 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    font-weight: 700;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    color: #fff;
+    background-color: var(--primary);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  #services-1629 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #services-1629 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1629 .cs-container {
+    max-width: 80rem;
+  }
+  #services-1629 .cs-item {
+    margin: 0;
+    width: 100%;
+    align-items: flex-start;
+  }
+  #services-1629 .cs-h3,
+  #services-1629 .cs-item-text {
+    text-align: left;
+  }
+  #services-1629 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #services-1629 .cs-flex {
+    text-align: left;
+    width: 40vw;
+    max-width: 40rem;
+    flex: none;
+  }
+  #services-1629 .cs-title {
+    margin: 0;
+  }
+  #services-1629 .cs-text {
+    padding: 0.75rem 0 0.75rem 1.5rem;
+  }
+  #services-1629 .cs-text:after {
+    width: 1px;
+    height: 100%;
+    margin: 0 1.5rem 0 0;
+    order: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #services-1629 .cs-card-group {
+    max-width: 80rem;
+  }
+  #services-1629 .cs-item {
+    flex-direction: row;
   }
 }
 /*-- -------------------------- -->
@@ -239,6 +454,7 @@
   }
   #about-us .dev-img {
     margin: 30px;
+    max-width: 21.25rem;
   }
   #about-us .dev-img img {
     height: 100%;
@@ -289,7 +505,7 @@
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
-    text-align: left;
+    text-align: center;
     width: 100%;
     margin: 0 auto 1rem;
     color: var(--headerColor);
@@ -300,7 +516,7 @@
     line-height: 1.5em;
     text-align: left;
     width: 100%;
-    max-width: 46.875rem;
+    max-width: 28.125rem;
     margin: 0 auto;
     margin-bottom: 1rem;
     color: var(--bodyTextColor);
@@ -309,25 +525,6 @@
   }
   #about-us .cs-text:last-of-type {
     margin-bottom: 2rem;
-  }
-  #about-us .cs-gutter {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-  }
-  #about-us .cs-card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: rgba(108, 181, 250, 0.37);
-    border-radius: 5%;
-  }
-  #about-us .cs-card-title {
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
   #about-us .cs-flex-group {
     /* 16px - 32px */
@@ -410,8 +607,10 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
+  #about-us {
+    padding-top: 0px;
+  }
   #about-us .cs-container {
-    flex-flow: row;
     justify-content: space-between;
     gap: 3.25rem;
   }
@@ -578,13 +777,19 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
+  #pricing {
+    display: flex;
+    justify-content: center;
+  }
   #pricing .pricing-card {
     display: flex;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.08);
     flex-direction: column;
     align-items: center;
+    max-width: 56.25rem;
     padding: 30px;
     margin: 10px;
+    width: 100%;
   }
   #pricing .pricing-card .pricing-name {
     font-weight: 700;

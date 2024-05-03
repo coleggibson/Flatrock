@@ -13,7 +13,15 @@ eleventyNavigation:
 
 <!-- Enter html code below -->
 
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
 
+<section id="cta">
+  <div class="container">
+  </div>
+  {% image './src/images/computers.jpg', 'computers', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
+</section>
 
 <!-- ============================================ -->
 <!--                    Landing                   -->
@@ -22,7 +30,10 @@ eleventyNavigation:
 <section id="landing">
   <div class="cs-container">
     <div class="cs-right">
-      {% image './src/images/me.jpg', 'dev', 'dev-img', 'lazy'%}
+      <div class="dev-container">
+        {% image './src/images/me.jpg', 'dev', 'dev-img', 'lazy'%}
+        </div>
+    
       <span class="cs-topper">Flatrock Web Design</span>
       <h2 class="cs-title">About Us</h2>
       <p class="cs-text">
@@ -32,21 +43,8 @@ eleventyNavigation:
       <p class="cs-text">
         I believe in a collaborative approach, working closely with you to understand your unique needs and preferences. From responsive design to seamless navigation, I'll ensure that your website not only looks stunning but also functions flawlessly across all devices. I created the $0 down and $150 a month model to make web design affordable for any small business. 
       </p>
+      <a href="/contact" class="button-solid">Contact Us Now</a>
     </div>
   </div>
 </section>
 
-<!-- ============================================ -->
-<!--             Final Call to Action             -->
-<!-- ============================================ -->
-
-<section id="cta">
-  <div class="container">
-    <h2 class="title">Get It Done <br> With Us Today</h2>
-    <p>
-      Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
-    </p>
-    <a href="/contact.html" class="button-solid">Contact Now</a>
-  </div>
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
-</section>
