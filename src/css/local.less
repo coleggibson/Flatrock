@@ -21,7 +21,7 @@
             width: 100%;
             padding: 10px;
             margin-top: 10px;
-            background-color: rgba(108, 181, 250, 0.37);
+            background-color: var(--primaryDark);
             border-radius: 5%;
         }
         
@@ -996,7 +996,10 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
     body.dark-mode {
-        #cta {
+        #pricing 
+            .pricing-card{
+            color: var(--bodyTextColorWhite);
+            background-color: var(--primaryDark);
             &:after {
                 display: none;
             }

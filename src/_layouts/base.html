@@ -46,7 +46,7 @@
         <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
         <title>
             {% if page.url == '/'%}
-                Flatrock Web Design | {{ tagTitle }} | {{ Nashville, TN }}
+                {{ client.name }} | {{ tagTitle }} | {{ client.address.city }}
             {% else %}
                 {{ tagTitle }} | {{ client.name }}
             {% endif %}
